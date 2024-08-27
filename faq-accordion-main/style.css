@@ -1,0 +1,74 @@
+html {
+    font-family: "Work Sans", sans-serif;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* body {
+    background-image: url('assets/images/background-pattern-desktop.svg');
+} */
+
+p {
+    font-size: 16px;
+    color: hsl(292, 16%, 49%);
+}
+
+hr {
+    border: 1px solid gainsboro;
+    border-radius: 25px;
+}
+
+.faq {
+    /* border: 1px solid red; */
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 6rem;
+    width: 60%;
+    padding: 2rem;
+}
+
+.faq-container {
+    display: flex;
+}
+
+.star-icon {
+    margin-right: 1rem;
+}
+
+.plus-icon {
+    margin-left: 1rem;
+    transition: .2s;
+}
+
+.plus-icon:hover{
+    transform: rotate(45deg);
+}
+
+.plus-icon:active{
+    transform: translateY(2px);
+}
+
+.question{
+    font-weight: bold;
+    color: hsl(292, 42%, 14%);
+}
+
+.question-container {
+    display: flex;
+}
+
+.answer {
+    position: relative;
+    height: 0px;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordion-container.active .answer-container .answer {
+    height: auto;
+}
